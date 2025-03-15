@@ -2,7 +2,7 @@
 let amigos = []
 let sorteados = []
 
-function adicionarAmigo() {
+function adicionarParticipante() {
     const inputAmigo = document.getElementById("amigo"); 
     let nome = inputAmigo.value.trim(); 
 
@@ -17,4 +17,14 @@ function adicionarAmigo() {
         alert("Favor inserir um nome válido ou que não tenha sido usado.");
         return;
     }
+   
+    amigos.push();
+    console.log(amigos);
+    inputAmigo.value = ""; 
+    inputAmigo.focus(); atualizaçãoLista(nome);
+    
 }
+
+
+//ultlizando a função para atualizar as listas dos nomes
+atualizaçãoLista()
