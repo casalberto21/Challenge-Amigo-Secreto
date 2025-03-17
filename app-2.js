@@ -45,3 +45,20 @@ function atualizarLista() {
     });
 }
 
+
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("Adicione um amigo antes de sortear!");
+        return;
+    }
+    
+    if (amigos.length < 3) {
+        alert("Adicione pelo menos 3 amigos para sortear!");
+        return;
+    }
+
+    const amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
+    document.getElementById("resultado").innerHTML = 
+        "<li>🎉 O amigo secreto sorteado é: " + amigoSorteado + "! 🎁</li>";
+}
