@@ -26,8 +26,8 @@ Como Executar o Projeto
 
 Clone este repositório:
 
-git clone https://github.com/seu-usuario/amigo-secreto.git
+git clone git@github.com:casalberto21/Challenge-Amigo-Secreto.git
 
 Abra o arquivo index.html no navegador.
 
-ou acesse através deste link: 
+ou acesse através deste link: https://amigo-secreto-challenge-ruddy.vercel.app
