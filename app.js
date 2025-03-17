@@ -1,29 +1,24 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
-let amigos = []
-
-let sorteados = []
+let amigos = [];
+let sorteados = [];
 
 function adicionarParticipante() {
     const inputAmigo = document.getElementById("amigo"); 
     let nome = inputAmigo.value.trim(); 
 
-    //Validando a função para que não haja nomes vazios, nomes repetidos ou números.
-
-    if (amigos.includes(nome)){
+    if (amigos.includes(nome)) {
         alert("Este participante já foi escolhido! Coloque outro nome para continuar.");
         return;
     }
     
     if (nome === "" || !isNaN(nome)) { 
-        alert("Favor inserir um nome válido ou que não tenha sido usado.");
+        alert("Favor inserir um nome válido.");
         return;
     }
    
-    amigos.push(nome); 
-    console.log(amigos);
+    amigos.push(nome);
     inputAmigo.value = ""; 
     inputAmigo.focus();
-    atualizarLista(); 
+    atualizarLista();
 } 
 
 function atualizarLista() {
@@ -45,7 +40,10 @@ function atualizarLista() {
     });
 }
 
-
+function removerAmigo(index) {
+    amigos.splice(index, 1);
+    atualizarLista();
+}
 
 function sortearAmigo() {
     if (amigos.length === 0) {
@@ -58,7 +56,27 @@ function sortearAmigo() {
         return;
     }
 
-    const amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
+    if (sorteados.length === amigos.length) {
+        sorteados = []; // Reseta a lista se todos já foram sorteados
+    }
+
+    let amigoSorteado;
+    do {
+        amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
+    } while (sorteados.includes(amigoSorteado));
+
+    sorteados.push(amigoSorteado);
+    
     document.getElementById("resultado").innerHTML = 
         "<li>🎉 O amigo secreto sorteado é: " + amigoSorteado + "! 🎁</li>";
 }
+
+function limparLista() {
+    document.getElementById("listaAmigos").innerHTML = ""; 
+    document.getElementById("resultado").innerHTML = "";  
+    amigos = [];
+    sorteados = [];
+}
+
+//Botão novo sorteio
+document.getElementById("novoSorteio").addEventListener("click", limparLista);
