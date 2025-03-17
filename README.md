@@ -1,28 +1,28 @@
-Amigo Secreto
+# 🎉 Amigo Secreto  
 
-Descrição
+## 📌 Descrição  
 
-Este é um aplicativo web para sorteio de amigo secreto. Ele permite que os participantes sejam adicionados, listados e sorteados de maneira simples e intuitiva.
+Bem-vindo ao **Amigo Secreto**, um aplicativo web desenvolvido para tornar seu sorteio mais fácil e divertido!  
+Com uma interface simples e intuitiva, você pode adicionar participantes, visualizar a lista e realizar o sorteio de forma prática e segura.  
 
-Funcionalidades
+---
 
-Adicionar participantes ao sorteio.
+## 🚀 Funcionalidades  
 
-Remover participantes da lista.
+✔️ **Adicionar** participantes ao sorteio.  
+🗑️ **Remover** participantes da lista.  
+🎲 **Sortear** um amigo secreto de forma totalmente aleatória.  
+🔄 **Reiniciar** o sorteio e limpar a lista de participantes.  
 
-Sortear um amigo secreto de forma aleatória.
+---
 
-Reiniciar o sorteio e limpar a lista de participantes.
+## 🛠️ Tecnologias Utilizadas  
 
-Tecnologias Utilizadas
+📌 **HTML** → Estruturação da página.  
+🎨 **CSS** → Estilização e responsividade.  
+⚙️ **JavaScript** → Lógica do sorteio e interatividade.  
 
-HTML para estruturação da página.
-
-CSS para estilização e responsividade.
-
-JavaScript para a lógica do sorteio e interatividade.
-
-Como Executar o Projeto
+---
 
 Clone este repositório:
 
