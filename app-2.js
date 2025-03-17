@@ -24,9 +24,6 @@ function adicionarParticipante() {
     inputAmigo.value = ""; 
     inputAmigo.focus();
     atualizarLista(); 
-    
-    // Utilizando a função para atualizar a lista dos nomes
-  
 } 
 
 function atualizarLista() {
